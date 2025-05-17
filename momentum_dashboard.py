@@ -7,14 +7,14 @@ from datetime import datetime, timedelta
 import requests
 import streamlit as st
 
-def get_public_ip():
-    try:
-        ip = requests.get('https://api.ipify.org').text
-        st.write(f"当前 Streamlit 公网 IP: `{ip}`")
-    except Exception as e:
-        st.error(f"获取 IP 失败: {e}")
+# def get_public_ip():
+#     try:
+#         ip = requests.get('https://api.ipify.org').text
+#         st.write(f"当前 Streamlit 公网 IP: `{ip}`")
+#     except Exception as e:
+#         st.error(f"获取 IP 失败: {e}")
 
-get_public_ip()
+# get_public_ip()
 
 
 # 1. 数据库连接
