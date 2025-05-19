@@ -9,6 +9,7 @@ import matplotlib.dates as mdates
 import seaborn as sns
 from sqlalchemy import create_engine
 import traceback
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示问题
 
 # 1. 页面配置
 st.set_page_config(layout="wide", page_title="资金流同步相关性因子", page_icon="📊")
@@ -92,8 +93,6 @@ def calculate_factor(index_code):
         )
     df['RankCorr_ELt_St'] = rolling_spearman(df['ELt'], df['St'], window=20)
     return df.dropna()
-
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示问题
 
 # 5. 指数走势与因子对比绘图（显式传递figure）
 def plot_index_factor_comparison(merged, index_code):
