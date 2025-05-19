@@ -93,10 +93,12 @@ def calculate_factor(index_code):
     df['RankCorr_ELt_St'] = rolling_spearman(df['ELt'], df['St'], window=20)
     return df.dropna()
 
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示问题
+
 # 5. 指数走势与因子对比绘图（显式传递figure）
 def plot_index_factor_comparison(merged, index_code):
     """绘制双轴对比图"""
-    plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+    plt.rcParams['font.sans-serif'] = ['SimHei']  # 解决中文显示问题
     plt.rcParams['axes.unicode_minus'] = False
     fig, ax1 = plt.subplots(figsize=(16, 7))  # 显式创建figure
     ax2 = ax1.twinx()
