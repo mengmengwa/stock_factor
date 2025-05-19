@@ -11,3 +11,4 @@ seaborn>=0.13.0  # 最新稳定版
 python-dateutil>=2.8.2
 pytz>=2024.3
 -r setup.sh
+rich==13.9.4  # 显式指定兼容版本
