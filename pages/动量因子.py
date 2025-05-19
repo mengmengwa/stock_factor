@@ -5,7 +5,7 @@ import pymysql
 from datetime import datetime, timedelta
 
 # 1. 页面配置
-st.set_page_config(layout="wide", page_title="指数动量分析", page_icon="📊")
+st.set_page_config(layout="wide", page_title="指数动量因子", page_icon="📊")
 
 # 2. 数据库连接管理（完全避免重复关闭）
 class DBManager:
