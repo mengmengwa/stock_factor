@@ -12,7 +12,7 @@ import traceback
 import matplotlib as mpl
 
 # 添加字体注册代码
-font_path = 'fonts/SimHei.ttf'  # 字体文件路径
+font_path = 'fonts/SimHei.ttf'  # 字体文件路径 
 mpl.font_manager.fontManager.addfont(font_path)  # 注册字体
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 指定字体名称
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
