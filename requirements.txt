@@ -4,3 +4,4 @@ plotly==5.18.0
 pymysql==1.1.0  # 替代mysql-connector
 python-dotenv==1.0.0
 sqlalchemy>=2.0.0
+scipy
